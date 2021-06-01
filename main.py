@@ -32,3 +32,5 @@ for bath in raw_data:
     public_baths.append(entry)
 data["public_baths"] = public_baths
 pprint(data)
+with open("sample.json", "w") as outfile:
+    outfile.write(json.dumps(data))
